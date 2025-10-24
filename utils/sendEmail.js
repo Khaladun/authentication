@@ -21,7 +21,7 @@ const sendOTP = async (email, otp) => {
 
 // Reset Password Email
 const sendResetPasswordEmail = async (email, token) => {
-  const resetUrl = `http://localhost:3000/reset-password/${token}`;  // Frontend URL পরিবর্তন করুন
+  const resetUrl = `http://localhost:3000/reset-password/${token}`; 
   const mailOptions = {
     from: process.env.EMAIL_USER,
     to: email,
